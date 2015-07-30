@@ -1,0 +1,25 @@
+{
+  "name": "chai-es6-sample",
+  "version": "0.0.1",
+  "description": "An sample module that shows how to use Mocha, Chai and Istanbul to test and generate coverage for ES6 code.",
+  "main": "rectangle.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argelius/chai-es6-sample.git"
+  },
+  "author": "Andreas Argelius <andreas@argeli.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/argelius/chai-es6-sample/issues"
+  },
+  "homepage": "https://github.com/argelius/chai-es6-sample#readme",
+  "devDependencies": {
+    "babel": "^5.8.19",
+    "chai": "^3.2.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
+}
