@@ -4,9 +4,9 @@
   "description": "An sample module that shows how to use Mocha, Chai and Istanbul to test and generate coverage for ES6 code.",
   "main": "rectangle.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --compilers js:babel/register",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel/register",
-    "coverage-es6": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha" 
+    "test": "mocha --compilers js:babel/register",
+    "coverage": "istanbul cover _mocha -- --compilers js:babel/register",
+    "coverage-es6": "babel-node ./node_modules/.bin/isparta cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "babel": "^5.8.19",
     "chai": "^3.2.0",
+    "isparta": "^3.0.4",
     "istanbul": "^0.3.17",
     "mocha": "^2.2.5"
   }
